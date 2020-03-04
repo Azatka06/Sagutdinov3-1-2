@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sagutdinov3-1-2</string>
+    <string name="button0">0</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="buttonPoint">,</string>
+    <string name="butC">C</string>
+    <string name="butPlusMinus">+/-</string>
+    <string name="butProc">%</string>
+    <string name="butDiv">/</string>
+    <string name="butMul">x</string>
+    <string name="butMinus">-</string>
+    <string name="butPlus">+</string>
+    <string name="butEq">=</string>
+</resources>
