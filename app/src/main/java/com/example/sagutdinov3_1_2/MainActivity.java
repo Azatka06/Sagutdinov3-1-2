@@ -145,13 +145,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnPress(View view) {
-        boolean c = outputText.getText().toString().indexOf(",") == 1 ? true : false;
-        int a = c ? 1 : 0;
+        String output = outputText.getText().toString();
         Button btn = (Button) view;
-        if ((btn.getId() == R.id.butPoint) && (a == 1)) {
+        if (output.contains(".") && (btn.getId() == R.id.butPoint)) { //проверяем, нет ли знака запятой в строке output
             Toast.makeText(MainActivity.this, "Ошибка, число уже не целое", Toast.LENGTH_LONG).show();
         } else {
-            outputText.append(btn.getText());
+            if ((output.trim().length()==0) && (btn.getId() == R.id.butPoint)) {
+                Toast.makeText(MainActivity.this, "Ошибка, вы не ввели ни одну цифру", Toast.LENGTH_LONG).show();
+            } else {
+                outputText.append(btn.getText());
+            }
 
         }
 
